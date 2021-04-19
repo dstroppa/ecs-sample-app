@@ -1,9 +1,0 @@
-version: 0.0
-Resources:
-  - TargetService:
-      Type: AWS::ECS::Service
-      Properties:
-        TaskDefinition: "arn:aws:ecs:eu-west-1:560846014933:task-definition/ecsSampleAppBG:2"
-        LoadBalancerInfo:
-          ContainerName: "app"
-          ContainerPort: 80
